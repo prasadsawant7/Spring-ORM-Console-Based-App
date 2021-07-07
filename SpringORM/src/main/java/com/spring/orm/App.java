@@ -56,9 +56,9 @@ public class App {
 	        		
 	        		case 4 : {
 	        			System.out.println("Note: Before updating the student, student should be available first in database");
-	        	    	System.out.println("ID cannot be changed you can change Name and City only");
-	        	    	updateStudent();
-	        	    	break;	
+					System.out.println("ID cannot be changed you can change Name and City only");
+					updateStudent();
+					break;	
 	        		}
 	        		
 	        		case 5 : {

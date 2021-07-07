@@ -21,40 +21,51 @@
       	<version>3.8.1</version>
       	<scope>test</scope>
     </dependency>
-	<dependency>
+    <dependency>
       	<groupId>org.springframework</groupId>
       	<artifactId>spring-core</artifactId>
       	<version>5.2.15.RELEASE</version>
-	</dependency>
-	<dependency>
+    </dependency>
+    <dependency>
       	<groupId>org.springframework</groupId>
       	<artifactId>spring-context</artifactId>
       	<version>5.2.15.RELEASE</version>
-	</dependency>
-	<dependency>
+    </dependency>
+    <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-orm</artifactId>
     	<version>5.2.15.RELEASE</version>
-	</dependency>
-	<dependency>
+    </dependency>
+    <dependency>
     	<groupId>org.hibernate</groupId>
     	<artifactId>hibernate-core</artifactId>
     	<version>5.2.15.Final</version>
-	</dependency>
-	<dependency>
+    </dependency>
+<!--
+     Optional Dependancies
+
+     These dependacies are for using second level cache in hibernate, 
+     because hibernate provides you only first level cache. 
+     Hiernate doesn't provide us second level cache so, we use 3rd party libraries for it.
+     Here we have used Ehcache for using 2nd level cache.
+
+     This dependancy is for Hibernate and Ehcache Integration
+    <dependency>
     	<groupId>org.hibernate</groupId>
-	    <artifactId>hibernate-ehcache</artifactId>
+	<artifactId>hibernate-ehcache</artifactId>
     	<version>5.2.15.Final</version>
-	</dependency>
-	<dependency>
+    </dependency>
+    
+     This dependancy is for using Ehcache in our Hibernate
+    <dependency>
     	<groupId>org.ehcache</groupId>
     	<artifactId>ehcache</artifactId>
     	<version>3.9.4</version>
-	</dependency>
+    </dependency> -->
     <dependency>
     	<groupId>org.postgresql</groupId>
     	<artifactId>postgresql</artifactId>
     	<version>42.2.22</version>
-	</dependency>
+    </dependency>
   </dependencies>
 </project>

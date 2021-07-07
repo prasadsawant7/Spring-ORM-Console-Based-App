@@ -20,9 +20,9 @@
     <!-- DriverManagerDataSource/DataSource -->
     <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds">
     	<property name="driverClassName" value="org.postgresql.Driver" /> 
-    	<property name="url" value="jdbc:postgresql://localhost:5432/springjdbc" />
-    	<property name="username" value="postgres" />
-		<property name="password" value="P@Dp13280526" />
+    	<property name="url" value="jdbc:postgresql://localhost:portNumber/databaseName" />
+    	<property name="username" value="databaseUsername" />
+	<property name="password" value="databasePassword" />
     </bean>
 
     
@@ -36,8 +36,8 @@
     		<props>
     			<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
     			<!-- <prop key="hbm2ddl.auto">create</prop> -->
-				<prop key="hbm2ddl.auto">update</prop>
-				<prop key="show_sql">true</prop>
+			<prop key="hbm2ddl.auto">update</prop>
+			<prop key="show_sql">true</prop>
     		</props>
     	</property>
     	
@@ -45,7 +45,7 @@
     	<property name="annotatedClasses">
     		<list>
     			<value>com.spring.orm.entities.Student</value>
-			</list>
+		</list>
     	</property>
     </bean>
     
@@ -57,16 +57,16 @@
     
     
     <!-- StudentDao -->
-	<bean class="com.spring.orm.dao.StudentDao" name="studentDao">
-		<property name="hibernateTemplate" ref="hibernateTemplate" />
-	</bean>
+    <bean class="com.spring.orm.dao.StudentDao" name="studentDao">
+	<property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
 	
 	
     <!-- To Enable @Transactional Annotation -->
     <tx:annotation-driven/>
 	
-	<!-- Hibernate Transaction Manager -->
-	<bean class="org.springframework.orm.hibernate5.HibernateTransactionManager" name="transactionManager">
-		<property name="sessionFactory" ref="factory"></property>
-	</bean>
+    <!-- Hibernate Transaction Manager -->
+    <bean class="org.springframework.orm.hibernate5.HibernateTransactionManager" name="transactionManager">
+	<property name="sessionFactory" ref="factory"></property>
+    </bean>
 </beans>

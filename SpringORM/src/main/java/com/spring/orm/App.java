@@ -67,8 +67,8 @@ public class App {
 	        		}
 	        		
 	        		case 6 : { 
-	        					flag1 = false; 
-	        					break;
+	        			flag1 = false; 
+	        			break;
 	        		}
         		}
         	}

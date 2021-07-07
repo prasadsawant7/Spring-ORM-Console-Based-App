@@ -1,8 +1,6 @@
 package com.spring.orm;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -130,32 +128,32 @@ public class App {
 		    	
 		    	switch(noc) {
 		    		case 1: {
-		    			System.out.print("Enter the Name of the student => ");
-		    	    	studentName = br.readLine();
-		    	    	System.out.println("Name of the student is updated successfully, now you can exit\n");
-		    	    	System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
-		    	    	checker[0] = true;
-		    	    	break;
+					System.out.print("Enter the Name of the student => ");
+					studentName = br.readLine();
+					System.out.println("Name of the student is updated successfully, now you can exit\n");
+					System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
+					checker[0] = true;
+					break;
 		    		}
 		    		
 		    		case 2: {
-		    			System.out.print("Enter the City of the student => ");
-		    	    	studentCity = br.readLine();
-		    	    	System.out.println("City of the student is updated successfully, now you can exit\n");
-		    	    	System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
-		    	    	checker[1] = true;
-		    	    	break;
+					System.out.print("Enter the City of the student => ");
+					studentCity = br.readLine();
+					System.out.println("City of the student is updated successfully, now you can exit\n");
+					System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
+					checker[1] = true;
+					break;
 		    		}
 		    		
 		    		case 3: {
 		    			System.out.print("Enter the Name of the student => ");
-		    	    	studentName = br.readLine();
+		    	    		studentName = br.readLine();
 		    			System.out.print("Enter the City of the student => ");
-		    	    	studentCity = br.readLine();
-		    	    	System.out.println("Name & City of the student is updated successfully!");
-		    	    	System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
-		    	    	checker[2] = true;
-		    	    	break;
+					studentCity = br.readLine();
+					System.out.println("Name & City of the student is updated successfully!");
+					System.out.println("If you want to update again, then you can update or else if you don't want you can save & exit by Pressing 4\n");
+					checker[2] = true;
+					break;
 		    		}
 		    		
 		    		case 4: {

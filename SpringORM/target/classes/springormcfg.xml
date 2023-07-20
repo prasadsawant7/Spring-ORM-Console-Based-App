@@ -22,7 +22,7 @@
     	<property name="driverClassName" value="org.postgresql.Driver" /> 
     	<property name="url" value="jdbc:postgresql://localhost:5432/springjdbc" />
     	<property name="username" value="postgres" />
-		<property name="password" value="P@Dp13280526" />
+		<property name="password" value="abcd@123" />
     </bean>
 
     
